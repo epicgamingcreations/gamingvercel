@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import { MoveRight } from "lucide-react";
 import { useState, useMemo } from "react";
 
@@ -53,9 +52,9 @@ export default function EpicGamingHome() {
       <section className="px-6 py-10 text-center bg-gradient-to-b from-black to-zinc-900">
         <h1 className="text-4xl md:text-5xl font-bold mb-4 text-yellow-400">Epic Gaming Creations, LLC</h1>
         <p className="text-lg md:text-xl mb-6">Custom Gaming PCs Built for Power, Style & Performance</p>
-        <Button className="bg-yellow-400 text-black hover:bg-yellow-300 text-base md:text-lg px-6 py-2 rounded-full">
+        <button className="bg-yellow-400 text-black hover:bg-yellow-300 text-base md:text-lg px-6 py-2 rounded-full inline-flex items-center">
           Shop Builds <MoveRight className="ml-2" />
-        </Button>
+        </button>
       </section>
 
       <section className="py-16 px-4 sm:px-6 md:px-8 lg:px-10 max-w-7xl mx-auto">
@@ -65,7 +64,7 @@ export default function EpicGamingHome() {
             <div key={index} className="bg-zinc-800 border border-zinc-700 rounded-xl p-6">
               <h3 className="text-2xl font-semibold text-yellow-300 mb-2">{build}</h3>
               <p className="text-zinc-300 mb-4">High-performance gaming rig built for serious players and content creators.</p>
-              <Button className="bg-yellow-400 text-black hover:bg-yellow-300 w-full">View Build</Button>
+              <button className="bg-yellow-400 text-black hover:bg-yellow-300 w-full py-2 rounded">View Build</button>
             </div>
           ))}
         </div>
@@ -100,9 +99,9 @@ export default function EpicGamingHome() {
               {JSON.stringify(config, null, 2)}
             </pre>
             <p className="text-xl text-yellow-400 font-semibold mt-4">Estimated Price: ${totalPrice}</p>
-            <Button className="bg-yellow-400 text-black hover:bg-yellow-300 text-base px-6 py-2 rounded-full mt-4">
+            <button className="bg-yellow-400 text-black hover:bg-yellow-300 text-base px-6 py-2 rounded-full mt-4">
               Request Quote
-            </Button>
+            </button>
           </div>
         </div>
       </section>
@@ -112,9 +111,9 @@ export default function EpicGamingHome() {
         <p className="text-zinc-300 max-w-2xl mx-auto mb-8 text-base md:text-lg">
           We offer hand-built, professionally cable-managed gaming PCs with top-tier components, sleek designs, and reliable customer support. Choose power. Choose aesthetics. Choose Epic.
         </p>
-        <Button className="bg-yellow-400 text-black hover:bg-yellow-300 px-6 py-2 text-base md:text-lg rounded-full">
+        <button className="bg-yellow-400 text-black hover:bg-yellow-300 px-6 py-2 text-base md:text-lg rounded-full">
           Contact Us
-        </Button>
+        </button>
       </section>
 
       <footer className="bg-black py-6 text-center text-zinc-500 text-sm">
