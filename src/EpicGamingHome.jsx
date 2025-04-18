@@ -1,4 +1,3 @@
-import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { MoveRight } from "lucide-react";
 import { useState, useMemo } from "react";
@@ -63,13 +62,11 @@ export default function EpicGamingHome() {
         <h2 className="text-3xl font-bold text-yellow-400 text-center mb-10">Our Builds</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {["Streamer Pro", "4K Ultra Gamer", "VR Ready Beast"].map((build, index) => (
-            <Card key={index} className="bg-zinc-800 border border-zinc-700">
-              <CardContent className="p-6">
-                <h3 className="text-2xl font-semibold text-yellow-300 mb-2">{build}</h3>
-                <p className="text-zinc-300 mb-4">High-performance gaming rig built for serious players and content creators.</p>
-                <Button className="bg-yellow-400 text-black hover:bg-yellow-300 w-full">View Build</Button>
-              </CardContent>
-            </Card>
+            <div key={index} className="bg-zinc-800 border border-zinc-700 rounded-xl p-6">
+              <h3 className="text-2xl font-semibold text-yellow-300 mb-2">{build}</h3>
+              <p className="text-zinc-300 mb-4">High-performance gaming rig built for serious players and content creators.</p>
+              <Button className="bg-yellow-400 text-black hover:bg-yellow-300 w-full">View Build</Button>
+            </div>
           ))}
         </div>
       </section>
